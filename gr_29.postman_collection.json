@@ -1,0 +1,738 @@
+{
+	"info": {
+		"_postman_id": "6b97a77e-e154-4210-bd28-d8a5729a1e5e",
+		"name": "gr_29",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//     pm.response.to.have.status(200);\r",
+							"// });\r",
+							"// let item_1 = \"Alex\"\r",
+							"// pm.test(\"Item_1 test\", function () {\r",
+							"// pm.test(item_1).to.deep.equal(Alex)\r",
+							"// });\r",
+							"let person = {\r",
+							"    \"age\": \"20\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 2040\r",
+							"    },\r",
+							"    \"name\": \"Alex\",\r",
+							"    \"salary\": 510\r",
+							"}\r",
+							"pm.test(\"Item_2 Person\", function(){\r",
+							"\r",
+							"    pm.expect(person.age).to.deep.equal(\"20\");\r",
+							"});\r",
+							"pm.test(\"Item_2 Person2\", function () {\r",
+							"pm.expect(person.age).to.deep.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person3\", function () {\r",
+							"pm.expect(person.age).to.equal(\"20\")\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person4\", function () {\r",
+							"pm.expect(person.age).to.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person5\", function () {\r",
+							"pm.expect(+person.age).to.equal(20)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "510",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?name=Mari&age=32",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mari"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//     pm.response.to.have.status(200);\r",
+							"// });\r",
+							"// let item_1 = \"Alex\"\r",
+							"// pm.test(\"Item_1 test\", function () {\r",
+							"// pm.test(item_1).to.deep.equal(Alex)\r",
+							"// });\r",
+							"let person = {\r",
+							"    \"age\": \"20\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 2040\r",
+							"    },\r",
+							"    \"name\": \"Alex\",\r",
+							"    \"salary\": 510\r",
+							"}\r",
+							"pm.test(\"Item_2 Person\", function(){\r",
+							"\r",
+							"    pm.expect(person.age).to.deep.equal(\"20\");\r",
+							"});\r",
+							"pm.test(\"Item_2 Person2\", function () {\r",
+							"pm.expect(person.age).to.deep.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person3\", function () {\r",
+							"pm.expect(person.age).to.equal(\"20\")\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person4\", function () {\r",
+							"pm.expect(person.age).to.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person5\", function () {\r",
+							"pm.expect(+person.age).to.equal(20)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "510",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Mari&age=32&weight=62",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mari"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "weight",
+							"value": "62"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//     pm.response.to.have.status(200);\r",
+							"// });\r",
+							"// let item_1 = \"Alex\"\r",
+							"// pm.test(\"Item_1 test\", function () {\r",
+							"// pm.test(item_1).to.deep.equal(Alex)\r",
+							"// });\r",
+							"let person = {\r",
+							"    \"age\": \"20\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 2040\r",
+							"    },\r",
+							"    \"name\": \"Alex\",\r",
+							"    \"salary\": 510\r",
+							"}\r",
+							"pm.test(\"Item_2 Person\", function(){\r",
+							"\r",
+							"    pm.expect(person.age).to.deep.equal(\"20\");\r",
+							"});\r",
+							"pm.test(\"Item_2 Person2\", function () {\r",
+							"pm.expect(person.age).to.deep.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person3\", function () {\r",
+							"pm.expect(person.age).to.equal(\"20\")\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person4\", function () {\r",
+							"pm.expect(person.age).to.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person5\", function () {\r",
+							"pm.expect(+person.age).to.equal(20)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "510",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Mari&age=32&salary=5000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mari"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "salary",
+							"value": "5000"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//     pm.response.to.have.status(200);\r",
+							"// });\r",
+							"// let item_1 = \"Alex\"\r",
+							"// pm.test(\"Item_1 test\", function () {\r",
+							"// pm.test(item_1).to.deep.equal(Alex)\r",
+							"// });\r",
+							"let person = {\r",
+							"    \"age\": \"20\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 2040\r",
+							"    },\r",
+							"    \"name\": \"Alex\",\r",
+							"    \"salary\": 510\r",
+							"}\r",
+							"pm.test(\"Item_2 Person\", function(){\r",
+							"\r",
+							"    pm.expect(person.age).to.deep.equal(\"20\");\r",
+							"});\r",
+							"pm.test(\"Item_2 Person2\", function () {\r",
+							"pm.expect(person.age).to.deep.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person3\", function () {\r",
+							"pm.expect(person.age).to.equal(\"20\")\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person4\", function () {\r",
+							"pm.expect(person.age).to.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person5\", function () {\r",
+							"pm.expect(+person.age).to.equal(20)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "510",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Mari&age=32&salary=5000",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mari"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "salary",
+							"value": "5000"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"// pm.test(\"Status code is 200\", function () {\r",
+							"//     pm.response.to.have.status(200);\r",
+							"// });\r",
+							"// let item_1 = \"Alex\"\r",
+							"// pm.test(\"Item_1 test\", function () {\r",
+							"// pm.test(item_1).to.deep.equal(Alex)\r",
+							"// });\r",
+							"let person = {\r",
+							"    \"age\": \"20\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 2040\r",
+							"    },\r",
+							"    \"name\": \"Alex\",\r",
+							"    \"salary\": 510\r",
+							"}\r",
+							"pm.test(\"Item_2 Person\", function(){\r",
+							"\r",
+							"    pm.expect(person.age).to.deep.equal(\"20\");\r",
+							"});\r",
+							"pm.test(\"Item_2 Person2\", function () {\r",
+							"pm.expect(person.age).to.deep.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person3\", function () {\r",
+							"pm.expect(person.age).to.equal(\"20\")\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person4\", function () {\r",
+							"pm.expect(person.age).to.equal(20)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Item_2 Person5\", function () {\r",
+							"pm.expect(+person.age).to.equal(20)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "510",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "text"
+						},
+						{
+							"key": "auth_token",
+							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Mari&age=32&salary=500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mari"
+						},
+						{
+							"key": "age",
+							"value": "32"
+						},
+						{
+							"key": "weight",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Mery",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mary",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "32",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "5000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Mery",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mary",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "32",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "5000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
