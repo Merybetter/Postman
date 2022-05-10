@@ -74,22 +74,26 @@
 						{
 							"key": "age",
 							"value": "20",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "salary",
 							"value": "510",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "name",
 							"value": "Alex",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "auth_token",
 							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -189,22 +193,26 @@
 						{
 							"key": "age",
 							"value": "20",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "salary",
 							"value": "510",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "name",
 							"value": "Alex",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "auth_token",
 							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -313,22 +321,26 @@
 						{
 							"key": "age",
 							"value": "20",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "salary",
 							"value": "510",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "name",
 							"value": "Alex",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "auth_token",
 							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -437,22 +449,26 @@
 						{
 							"key": "age",
 							"value": "20",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "salary",
 							"value": "510",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "name",
 							"value": "Alex",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "auth_token",
 							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -561,22 +577,26 @@
 						{
 							"key": "age",
 							"value": "20",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "salary",
 							"value": "510",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "name",
 							"value": "Alex",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "auth_token",
 							"value": "/s34lfgbj/Vadim/jjd909/12242kjkWpqc322823r23r3r457271evny",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
